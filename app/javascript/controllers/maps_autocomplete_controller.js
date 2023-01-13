@@ -1,5 +1,4 @@
 import { Controller } from "@hotwired/stimulus"
-// import GMaps from 'gmaps/gmaps.js';
 
 // Connects to data-controller="maps-autocomplete"
 export default class extends Controller {
