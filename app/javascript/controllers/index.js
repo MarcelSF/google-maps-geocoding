@@ -9,3 +9,6 @@ application.register("google-maps", GoogleMapsController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import MapsAutocompleteController from "./maps_autocomplete_controller"
+application.register("maps-autocomplete", MapsAutocompleteController)

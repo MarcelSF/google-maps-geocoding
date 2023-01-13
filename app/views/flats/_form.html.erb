@@ -3,9 +3,9 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
+  <div class="form-inputs" data-controller="maps-autocomplete">
     <%= f.input :name %>
-    <%= f.input :address %>
+    <%= f.input :address, input_html: {data: { maps_autocomplete_target: "address"  } } %>
   </div>
 
   <div class="form-actions">
